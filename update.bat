@@ -1,8 +1,8 @@
 @echo off
-title VideoSOS - Update
+title AIVRA - Update
 
 echo ========================================
-echo   VideoSOS - Update
+echo   AIVRA - Update
 echo ========================================
 echo.
 

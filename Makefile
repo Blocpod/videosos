@@ -5,7 +5,7 @@ SERVICE = app
 
 # Help command
 help:
-	@echo "VideoSOS Development Commands"
+	@echo "AIVRA Development Commands"
 	@echo ""
 	@echo "Docker Commands:"
 	@echo "  make up          - Start development environment"

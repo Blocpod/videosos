@@ -1,6 +1,6 @@
-# VideoSOS Deployment Guide
+# AIVRA Deployment Guide
 
-This guide will help you deploy VideoSOS from your local terminal environment to a live website accessible via a custom domain.
+This guide will help you deploy AIVRA from your local terminal environment to a live website accessible via a custom domain.
 
 ## Prerequisites
 
@@ -32,7 +32,7 @@ Choose one of these registrars:
 2. **Import Your Project**
    - Click "Add New Project"
    - Select "Import Git Repository"
-   - Choose your VideoSOS repository from the list
+   - Choose your AIVRA repository from the list
    - Vercel will auto-detect it as a Next.js project
 
 3. **Configure Environment Variables**

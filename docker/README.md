@@ -1,6 +1,6 @@
 # Docker Setup
 
-This directory contains Docker configuration for VideoSOS development environment.
+This directory contains Docker configuration for AIVRA development environment.
 
 ## Structure
 

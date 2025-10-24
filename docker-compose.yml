@@ -3,7 +3,7 @@ services:
     build:
       context: .
       dockerfile: docker/node/Dockerfile
-    container_name: videosos-app
+    container_name: aivra-app
     ports:
       - "3000:3000"
     volumes:

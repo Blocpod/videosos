@@ -1,4 +1,4 @@
-# VideoSOS - Open-Source AI-Powered Video Editor
+# AIVRA - Open-Source AI-Powered Video Editor
 
 [![GitHub stars](https://img.shields.io/github/stars/timoncool/videosos?style=social)](https://github.com/timoncool/videosos/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/timoncool/videosos?style=social)](https://github.com/timoncool/videosos/network/members)
@@ -9,15 +9,15 @@
 
 A powerful, browser-based AI video editor built for creators. Create stunning videos with 100+ AI models and advanced timeline editing.
 
-**[🚀 Try the Live Demo](https://videosos.vercel.app/)** | [🇷🇺 Русская версия README](./README.ru.md)
+**[🚀 Try the Live Demo](https://aivra.app)** | [🇷🇺 Русская версия README](./README.ru.md)
 
 ## Screenshots
 
 ### Landing Page
-![VideoSOS Landing Page](./public/screenshot-landing.png)
+![AIVRA Landing Page](./public/screenshot-landing.png)
 
 ### Video Editor
-![VideoSOS Video Editor](./public/screenshot-app.png)
+![AIVRA Video Editor](./public/screenshot-app.png)
 
 ---
 
@@ -43,7 +43,7 @@ Full internationalization support (English/Russian) with keyboard shortcuts for 
 
 ### AI Providers
 
-VideoSOS supports multiple AI providers simultaneously:
+AIVRA supports multiple AI providers simultaneously:
 
 - **[fal.ai](https://fal.ai)** - Comprehensive AI model infrastructure with 50+ models for image, video, and audio generation
 - **[Runware.ai](https://runware.ai)** - High-performance AI inference platform with 100+ models including FLUX, Google Imagen, Ideogram, Kling, and more
@@ -122,7 +122,7 @@ docker compose down
 
 ## Roadmap
 
-We're actively working on making VideoSOS even better! Here are the features and improvements we're planning:
+We're actively working on making AIVRA even better! Here are the features and improvements we're planning:
 
 ### Timeline Enhancements
 - **Segment Reordering** - Drag segments freely on the timeline to reorder them (currently they only bump into adjacent segments)
@@ -148,7 +148,7 @@ Want to contribute? Pick an item from the roadmap and submit a PR! See our [Cont
 
 ## Contributing
 
-We welcome contributions from developers of all skill levels! Whether you're fixing bugs, adding features, improving documentation, or sharing ideas, your help makes VideoSOS better for everyone.
+We welcome contributions from developers of all skill levels! Whether you're fixing bugs, adding features, improving documentation, or sharing ideas, your help makes AIVRA better for everyone.
 
 **How to contribute:**
 1. ⭐ Star this repository to show your support

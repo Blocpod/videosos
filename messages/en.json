@@ -9,11 +9,11 @@
     "hero": {
       "badge": "Now Open Source",
       "starGithub": "Star on GitHub",
-      "title": "VideoSOS",
+      "title": "AIVRA",
       "subtitle": "AI Video Editor",
       "description": "A powerful, open-source AI video editor built for creators. Create stunning videos with our intuitive tools, or develop your own AI video product using our kit.",
       "tryNow": "Try it now",
-      "imageAlt": "VideoSOS interface"
+      "imageAlt": "AIVRA interface"
     },
     "features": {
       "title": "Powerful features for modern creators",
@@ -45,11 +45,11 @@
     },
     "community": {
       "title": "Join our community",
-      "description": "VideoSOS is an open-source project. Star us on GitHub and contribute to help shape the future of AI-powered video editing.",
+      "description": "AIVRA is an open-source project. Star us on GitHub and contribute to help shape the future of AI-powered video editing.",
       "starGithub": "Star on GitHub"
     },
     "footer": {
-      "appName": "VideoSOS",
+      "appName": "AIVRA",
       "tagline": "Open-source AI video editor built for creators.",
       "credits": "Credits",
       "community": "Community",
@@ -58,7 +58,7 @@
   },
   "app": {
     "metadata": {
-      "title": "VideoSOS | AI Video Editor",
+      "title": "AIVRA | AI Video Editor",
       "description": "Open-source AI video editor that runs entirely in your browser."
     },
     "header": {

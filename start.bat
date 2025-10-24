@@ -1,9 +1,9 @@
 @echo off
 chcp 65001 >nul
-title VideoSOS - Запуск
+title AIVRA - Запуск
 
 echo ========================================
-echo   VideoSOS - AI Video Editor
+echo   AIVRA - AI Video Editor
 echo ========================================
 echo.
 
@@ -57,7 +57,7 @@ if not exist ".next" (
     echo.
 )
 
-echo Запуск VideoSOS...
+echo Запуск AIVRA...
 echo.
 echo Приложение будет доступно по адресу: http://localhost:3000
 echo Браузер откроется автоматически через несколько секунд.

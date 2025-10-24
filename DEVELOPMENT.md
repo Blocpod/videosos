@@ -1,6 +1,6 @@
 # Development Guide
 
-This guide explains how to set up and work with the VideoSOS development environment.
+This guide explains how to set up and work with the AIVRA development environment.
 
 ## Prerequisites
 
