@@ -16,7 +16,7 @@ export default function Header() {
         <div className="flex flex-1">
           <Link href={`/${locale}`} className="flex items-center space-x-2">
             <Video className="w-6 h-6" />
-            <span className="font-semibold">VideoSOS</span>
+            <span className="font-semibold">AIVRA</span>
           </Link>
         </div>
 
