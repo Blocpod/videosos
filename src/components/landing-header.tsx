@@ -5,6 +5,7 @@ import { Video } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 import { LanguageSwitcher } from "./language-switcher";
+import { Logo } from "./logo";
 
 export default function Header() {
   const t = useTranslations("landing.header");
@@ -16,7 +17,9 @@ export default function Header() {
         <div className="flex flex-1">
           <Link href={`/${locale}`} className="flex items-center space-x-2">
             <Video className="w-6 h-6" />
-            <span className="font-semibold">AIVRA</span>
+            <span className="font-semibold">
+              <Logo />
+            </span>
           </Link>
         </div>
 

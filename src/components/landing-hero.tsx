@@ -26,10 +26,13 @@ export default function Hero() {
             </a>
           </div>
 
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-8 bg-gradient-to-r from-white to-gray-500 bg-clip-text text-transparent">
-            {t("title")}
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-8">
+            <span className="text-cyan-600">AI</span>
+            <span className="text-teal-400">VRA</span>
             <br />
-            {t("subtitle")}
+            <span className="bg-gradient-to-r from-white to-gray-500 bg-clip-text text-transparent">
+              {t("subtitle")}
+            </span>
           </h1>
 
           <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-12">
