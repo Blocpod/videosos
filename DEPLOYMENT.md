@@ -36,16 +36,25 @@ Choose one of these registrars:
    - Vercel will auto-detect it as a Next.js project
 
 3. **Configure Environment Variables**
+
+   **IMPORTANT: Get Your Supabase Credentials First**
+   - Go to your [Supabase Dashboard](https://supabase.com/dashboard)
+   - Select your project (or create a new one)
+   - Go to Settings > API
+   - Copy your "Project URL" and "anon public" key
+
    - Before clicking "Deploy", expand "Environment Variables"
-   - Add the following variables from your `.env` file:
+   - Add the following required variables:
      ```
-     NEXT_PUBLIC_SUPABASE_URL=https://0ec90b57d6e95fcbda19832f.supabase.co
-     NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJib2x0IiwicmVmIjoiMGVjOTBiNTdkNmU5NWZjYmRhMTk4MzJmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTg4ODE1NzQsImV4cCI6MTc1ODg4MTU3NH0.9I8-U0x86Ak8t2DGaIk0HfvTSLsAyzdnz-Nw00mMkKw
+     NEXT_PUBLIC_SUPABASE_URL=your_actual_supabase_project_url
+     NEXT_PUBLIC_SUPABASE_ANON_KEY=your_actual_supabase_anon_key
      ```
+
    - (Optional) If you want file upload support, add:
      ```
      UPLOADTHING_TOKEN=your_uploadthing_token
      ```
+
    - (Optional) If you want share feature, add Upstash KV credentials:
      ```
      KV_URL=your_kv_url
@@ -53,6 +62,8 @@ Choose one of these registrars:
      KV_REST_API_URL=your_api_url
      KV_REST_API_READ_ONLY_TOKEN=your_readonly_token
      ```
+
+   **⚠️ SECURITY WARNING:** Never share these credentials publicly or commit them to version control!
 
 4. **Deploy**
    - Click "Deploy"
@@ -163,9 +174,50 @@ To update your live site, just push changes to GitHub!
 - Next.js Documentation: [nextjs.org/docs](https://nextjs.org/docs)
 - GitHub Issues: [Your Repository Issues Page]
 
-## Security Notes
+## Security Best Practices
 
-- **Never commit API keys to GitHub**
-- The Supabase credentials in environment variables are safe (they're anon keys)
-- User FAL/Runware keys are stored only in browser localStorage
-- No user data is stored on servers (everything stays in browser)
+### Critical Security Requirements
+
+1. **Environment Variables**
+   - **NEVER** commit your `.env` file to version control
+   - **NEVER** share your actual credentials in documentation or issues
+   - Always use placeholder values in example files
+   - Rotate credentials immediately if accidentally exposed
+
+2. **Supabase Credentials**
+   - The `NEXT_PUBLIC_SUPABASE_ANON_KEY` is designed to be used in client-side code
+   - However, it should still be treated as sensitive and not publicly shared
+   - Enable Row Level Security (RLS) policies on all Supabase tables
+   - Never expose your Supabase service role key
+
+3. **User API Keys**
+   - User FAL/Runware keys are stored only in browser localStorage
+   - Keys never leave the user's browser
+   - No keys are sent to your servers
+
+4. **Data Privacy**
+   - All user projects and media are stored locally in the browser's IndexedDB
+   - No user data is transmitted to your servers
+   - Share feature (if enabled) only stores video URLs, not the actual content
+
+### What To Do If Credentials Are Exposed
+
+1. **Immediately** rotate the exposed credentials:
+   - For Supabase: Generate a new project or reset your anon key
+   - For UploadThing: Regenerate your API token
+   - For Upstash KV: Create a new database or rotate keys
+
+2. Update all deployed instances with new credentials
+
+3. If exposed in git history:
+   - Consider the credentials permanently compromised
+   - Use `git-filter-repo` or similar tools to remove from history
+   - Force push (only if you're the sole contributor)
+
+### Secure Development Workflow
+
+1. Copy `.env.example` to `.env` for local development
+2. Add your real credentials to `.env` only
+3. Never modify `.env.example` with real credentials
+4. Verify `.gitignore` includes `.env` before committing
+5. Use environment variable validation in your code
