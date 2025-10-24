@@ -16,7 +16,7 @@ export default function Community() {
           <p className="text-gray-400 mb-8">{t("description")}</p>
 
           <div className="flex justify-center">
-            <Link href="https://github.com/timoncool/videosos">
+            <Link href="https://github.com/Blocpod/videosos.git">
               <Button variant="outline" size="lg">
                 <Github className="mr-2 h-5 w-5" />
                 {t("starGithub")}

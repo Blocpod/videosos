@@ -57,7 +57,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
                 <Link
-                  href="https://github.com/timoncool/videosos"
+                  href="https://github.com/Blocpod/videosos.git"
                   className="hover:text-white transition-colors"
                 >
                   {t("github")}

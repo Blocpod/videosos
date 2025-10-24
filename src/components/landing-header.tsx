@@ -34,7 +34,7 @@ export default function Header() {
             {t("community")}
           </Link>
           <Link
-            href="https://github.com/timoncool/videosos"
+            href="https://github.com/Blocpod/videosos.git"
             className="text-sm text-gray-400 hover:text-white transition-colors"
           >
             {t("github")}

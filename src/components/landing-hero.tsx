@@ -19,7 +19,7 @@ export default function Hero() {
             <span className="text-gray-400">{t("badge")}</span>
             <span className="ml-3 h-4 w-px bg-white/20" />
             <a
-              href="https://github.com/timoncool/videosos"
+              href="https://github.com/Blocpod/videosos.git"
               className="ml-3 flex items-center text-white hover:text-gray-300"
             >
               {t("starGithub")} <ArrowRight className="ml-1 h-4 w-4" />
@@ -50,7 +50,7 @@ export default function Hero() {
               className="min-w-[200px]"
               asChild
             >
-              <Link href="https://github.com/timoncool/videosos">
+              <Link href="https://github.com/Blocpod/videosos.git">
                 <Github className="mr-2 h-5 w-5" />
                 {t("starGithub")}
               </Link>
