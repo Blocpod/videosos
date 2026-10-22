@@ -14,13 +14,11 @@ type PageParams = {
 };
 
 type PageProps = {
-  params: PageParams;
+  params: Promise<PageParams>;
 };
 
-export async function generateMetadata(
-  { params }: PageProps,
-  parent: ResolvingMetadata,
-): Promise<Metadata> {
+export async function generateMetadata(props: PageProps, parent: ResolvingMetadata): Promise<Metadata> {
+  const params = await props.params;
   const t = await getTranslations({
     locale: params.locale,
     namespace: "share.metadata",
@@ -84,7 +82,8 @@ export async function generateMetadata(
   };
 }
 
-export default async function SharePage({ params }: PageProps) {
+export default async function SharePage(props: PageProps) {
+  const params = await props.params;
   const t = await getTranslations({
     locale: params.locale,
     namespace: "share",
@@ -132,3 +131,4 @@ export default async function SharePage({ params }: PageProps) {
     </div>
   );
 }
+
